@@ -26,13 +26,16 @@
   </head>
 	<body>
     <h1>Pretty Page</h1>
-    <button id="changeFont">Swap Font</button>
-    <button id="changeColor">Swap to Pink</button>
-    <button id="changeSize">Change Size</button>
 
-    <button class = "style" value = "bold"><b>B</b></button>
-    <button class = "style" value = "italic"><em>I</em></button>
-    <button class = "style" value = "underline"><u>U</u></button>
+    <div>
+      <input type="color" id = "colorChoice" value="#e66465"><label>Choose a colour</label>
+      <button id="bgColor">Change Bg Color</button>
+    </div>
+
+    <div>
+      <input type="color" id = "fontColorChoice" value="#e66465"><label>Choose a font colour</label>
+      <button id="fontColor">Change Font Color</button>
+    </div>
 
 		<select id="font-select">
       <option disabled selected value> -- Select A Font -- </option>
@@ -45,6 +48,25 @@
 		<input type="text" id="value">
 
 
+
+    <select id="preset-select">
+      <option disabled selected value> -- Select Preset -- </option>
+			<option value="dark-mode">Dark Mode</option>
+			<option value="princess-mode">Princess Mode</option>
+			<option value="vader-mode">Darth Vader Mode</option>
+      <option value="blue-mode">Blue Mode</option>
+      <option value="pastel1-mode">Pastel 1 Mode</option>
+			<option value="pastel2-mode">Pastel 2 Mode</option>
+		</select>
+    <button id = "presetSelect">Select Preset</button>
+    <label>Current Font:</label>
+		<input type="text" id="presetValue">
+
+    <button id="changeSize">Change Size</button>
+
+    <button class = "style" value = "bold"><b>B</b></button>
+    <button class = "style" value = "italic"><em>I</em></button>
+    <button class = "style" value = "underline"><u>U</u></button>
 
 
     <script src = buttons.js></script>
