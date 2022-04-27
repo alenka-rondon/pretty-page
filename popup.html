@@ -1,14 +1,54 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
   <head>
     <link rel = "stylesheet" href = "popup.css">
   </head>
   <body>
+
+    <select id="font-options">
+      <option value="Arial">Arial</option>
+      <option value="Comic Sans MS">Comic Sans MS</option>
+      <option value="Verdana">Verdana</option>
+    </select>
+    <input type="text" id="value">
+    <input type="text" id="text">
+
+  <script src = buttons.js></script>
+  <script src = background.js></script>
+
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel = "stylesheet" href = "popup.css">
+  </head>
+	<body>
     <h1>Pretty Page</h1>
     <button id="changeFont">Swap Font</button>
     <button id="changeColor">Swap to Pink</button>
     <button id="changeSize">Change Size</button>
 
-    <script src="buttons.js"></script>
-  </body>
+    <button class = "style" value = "bold"><b>B</b></button>
+    <button class = "style" value = "italic"><em>I</em></button>
+    <button class = "style" value = "underline"><u>U</u></button>
+
+		<select id="font-select">
+      <option disabled selected value> -- Select A Font -- </option>
+			<option value="Arial">Arial</option>
+			<option value="Comic Sans MS">Comic Sans MS</option>
+			<option value="Verdana">Verdana</option>
+		</select>
+    <button id = "fontSelect">Select Font</button>
+    <label>Current Font:</label>
+		<input type="text" id="value">
+
+
+
+
+    <script src = buttons.js></script>
+    <script src = background.js></script>
+
+	</body>
 </html>
