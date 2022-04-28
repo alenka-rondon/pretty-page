@@ -28,20 +28,30 @@
     <h1>Pretty Page</h1>
 
     <div>
-      <input type="color" id = "colorChoice" value="#e66465"><label>Choose a colour</label>
-      <button id="bgColor">Change Bg Color</button>
+      <input type="color" id = "colorChoice" value="#2b0b50"><label>Choose a colour</label>
+      <button id="bgColor">Change Background Color</button>
     </div>
 
     <div>
-      <input type="color" id = "fontColorChoice" value="#e66465"><label>Choose a font colour</label>
+      <input type="color" id = "fontColorChoice" value="#431181"><label>Choose a font colour</label>
       <button id="fontColor">Change Font Color</button>
     </div>
 
 		<select id="font-select">
       <option disabled selected value> -- Select A Font -- </option>
-			<option value="Arial">Arial</option>
-			<option value="Comic Sans MS">Comic Sans MS</option>
-			<option value="Verdana">Verdana</option>
+			<option class = "Arial" value="Arial">Arial</option>
+			<option class = "Calibri" value="Calibri">Calibri</option>
+			<option class = "Cambria" value="Cambria">Cambria</option>
+			<option class = "Century-Gothic" value="Century Gothic">Century Gothic</option>
+      <option class = "Comic-Sans-MS" value="Comic Sans MS">Comic Sans MS</option>
+			<option class = "Georgia" value="Georgia">Georgia</option>
+      <option class = "Helvetica" value="Helvetica">Helvetica</option>
+			<option class = "Lucida-Bright" value="Lucida Bright">Lucida Bright</option>
+			<option class = "Optima" value="Optima">Optima</option>
+      <option class = "Palatino" value="Palatino">Palatino</option>
+      <option class = "Verdana" value="Verdana">Verdana</option>
+
+
 		</select>
     <button id = "fontSelect">Select Font</button>
     <label>Current Font:</label>
@@ -59,14 +69,17 @@
 			<option value="pastel2-mode">Pastel 2 Mode</option>
 		</select>
     <button id = "presetSelect">Select Preset</button>
-    <label>Current Font:</label>
+    <label>Preset:</label>
 		<input type="text" id="presetValue">
 
     <button id="changeSize">Change Size</button>
 
-    <button class = "style" value = "bold"><b>B</b></button>
-    <button class = "style" value = "italic"><em>I</em></button>
-    <button class = "style" value = "underline"><u>U</u></button>
+    <button class = "font-style" id = "bold"><b>B</b></button>
+    <button class = "font-style" id = "italic"><em>I</em></button>
+    <button class = "font-style" id = "underline"><u>U</u></button>
+
+    <!-- <button id = "reset" name = "reset-btn">Reset Page</button> -->
+    <button class="reset-button" name="reset">Reset</button>
 
 
     <script src = buttons.js></script>

@@ -1,10 +1,81 @@
 body {
+  background-color: #e6d9ee;
   min-width: 500px;
-  font-family: cursive;
 }
+
+*{
+  font-family: 'Cambria';
+}
+
 button {
     margin: 5px;
-    border-radius: 2px;
-    border: 1px solid black;
-    font-family: cursive;
-  }
+    border-radius: 7px;
+    color: #2b0b50;
+    background-color: rgb(242, 222, 243);
+    border: 2px solid rgb(67, 17, 129);
+}
+
+button:hover {
+  color: white;
+  background-color: rgb(43, 11, 80);
+}
+
+h1 {
+  font-family: 'Lucida Console';
+  color: rgb(31, 8, 58);
+  
+}
+
+label {
+  font-family: 'Cambria';
+  padding: 5px;
+  font-size: small;
+}
+
+.font-style {
+  border-radius: 2px;
+}
+
+.Arial {
+  font-family: 'Arial';
+}
+
+.Calibri {
+  font-family: 'Calibri';
+}
+
+.Cambria {
+  font-family: 'Cambria';
+}
+
+.Century-Gothic {
+  font-family: 'Century Gothic';
+}
+
+.Comic-Sans-MS {
+  font-family: 'Comic-Sans-MS';
+}
+
+.Georgia {
+  font-family: 'Georgia';
+}
+
+.Helvetica {
+  font-family: 'Helvetica';
+}
+
+.Lucida-Bright {
+  font-family: 'Lucida-Bright';
+}
+
+.Optima {
+  font-family: 'Optima';
+}
+
+.Palatino {
+  font-family: 'Palatino';
+}
+
+.Verdana {
+  font-family: 'Verdana';
+}
